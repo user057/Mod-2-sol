@@ -1,0 +1,98 @@
+
+* { box-sizing: border-box;
+}
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+font-size: 20px;
+    color: #666;
+}
+p {
+    margin-top: 80px;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+}
+
+/* STRUCTURE */
+
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+header {
+	padding: 0 15px;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 4px solid gray;
+	margin: 4px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .columns .column {
+		
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+    p
+    {
+        font-size: 100%;
+    }
+    
+    .heading {
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+    .heading {
+        width:auto;
+    }
+}
+.heading
+{
+    float: right;
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.he1{
+    background-color:burlywood;
+}
+.he2{
+    color: white;
+    background-color:brown;
+}
+.he3{
+    background-color:cornsilk;
+}
+.heading h4{
+    font-weight: bold;
+    
+}
